@@ -1,0 +1,100 @@
+body {
+    background: #FFFFFF;
+}
+
+.error-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-404 h1 {
+    font-size: 142px;
+    font-family: kanit, sans-serif;
+    font-size: 200px;
+    font-weight: 200;
+    margin: 0;
+    background: linear-gradient(80deg, #FD7E14, #011F5D);
+    color: transparent;
+    background-clip: text;
+}
+
+.avatar-container {
+    position: relative;
+}
+
+.avatar-img-container {
+    position: relative;
+    display: inline-block;
+    /* Para que el contenedor se ajuste al tamaño de la imagen */
+}
+
+.avatar-img {
+    width: 45px;
+    /* Tamaño del avatar */
+    height: 45px;
+    /* Tamaño del avatar */
+    border-radius: 50%;
+    /* Para que la imagen sea circular */
+    overflow: hidden;
+    /* Oculta cualquier cosa que salga del contenedor circular */
+    border: 2px solid #ccc;
+    /* Borde del avatar */
+    background-color: #f0f0f0;
+    /* Color de fondo del avatar */
+}
+
+.avatar-img img {
+    width: 100%;
+    /* Asegura que la imagen llene el contenedor */
+    height: 100%;
+    /* Asegura que la imagen llene el contenedor */
+    object-fit: cover;
+    /* Para que la imagen no se deforme */
+}
+
+.online-indicator {
+    position: absolute;
+    /* Posiciona el indicador en línea absolutamente dentro del contenedor */
+    bottom: -6px;
+    /* Ajusta la posición vertical según sea necesario */
+    right: -6px;
+    /* Ajusta la posición horizontal según sea necesario */
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    border-radius: 50%;
+    z-index: 1;
+    /* Para que el indicador esté por encima de la imagen */
+}
+
+
+.user-info {
+    display: inline-block;
+    /* Para colocar el nombre y la ocupación en línea con el avatar */
+    vertical-align: middle;
+    /* Alinea verticalmente los elementos con el avatar */
+}
+
+/* Estilos para el scroll */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Anchura del scroll */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 31, 56, 0.8); 
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #0f1f38;
+    /* Color del thumb (el control deslizante) */
+    border-radius: 5px;
+    /* Radio de borde del thumb */
+}
